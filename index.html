@@ -125,7 +125,7 @@ async function submitRating(){
     photoBase64 = await getBase64(photoInput.files[0]);
   }
 
-  fetch("PASTE_YOUR_SCRIPT_URL_HERE",{
+  fetch("https://script.google.com/macros/s/AKfycbx7VYgd4y5hwZZiu0c5Lh9pVTUevzDonbSFf3jXn_1JU6i3L81y6G2TaSMKBIJOvhKgWw/exec",{
     method:"POST",
     body: JSON.stringify({
       rating: rating,
